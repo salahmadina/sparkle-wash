@@ -10,7 +10,7 @@ $result = mysqli_query($conn, $query);
 
 if (mysqli_num_rows($result) > 0) {
     $_SESSION["email"] = $email;
-    header("Location: index.html");
+    header("Location: contact.html");
     exit();
 } else {
     echo "Invalid email or password";
