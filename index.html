@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div><h1>Sparkle Wash</h1></div>
+
+        <div><h1>Your Car Deserves the Best Clean</h1></div>
+        <div><p>Book a car wash in seconds. Choose your service, pick a time, and we'll handle the rest.</p></div>
+
+        <section>
+            <h2>Why Choose Sparkle Wash?</h2>
+            <div>
+                <div>
+                    <p>Easy Booking</p>
+                    <p>Book your car wash in seconds with our user-friendly website. Choose your service, pick a time, and we'll handle the rest.</p>
+                </div>
+                <div>
+                    <p>Trusted Wash Sations </p>
+                    <p>We have a network of trusted car wash stations that ensure your vehicle receives the best care.</p>
+                </div>
+                <div>
+                    <p>Big Scale</p>
+                    <p>We operate on a large scale, ensuring consistent quality and service availability across all our locations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <div>
+                <div>
+                    <p>Basic Wash</p>
+                    <p>A quick and efficient wash to keep your car looking fresh.</p>
+                </div>
+                <div>
+                    <p>Deluxe Wash</p>
+                    <p>A thorough cleaning that includes interior vacuuming and exterior waxing.</p>
+                </div>
+                <div>
+                    <p>Premium Wash</p>
+                    <p>The ultimate car care package with a deep clean, polish, and protective coating.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="login-form">
+                <h2>Log In</h2>
+                <form action = "login.php" method = "post">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br>
+                    <button type="submit">Log In</button><br>
+                </form>
+                <p>Don't have an account? <a href="#" onclick="showForm('signup')">Sign Up</a></p>
+            </div>
+
+            <div id="signup-form" style="display:none">
+                <h2>Create Account</h2>
+                <form action = "signup.php" method = "post" onsubmit="return validateForm()">
+                    <p id="msg"></p>
+                    <label for="su-name">Full Name:</label><br>
+                    <input type="text" id="su-name" name="name" required><br>
+                    <label for="su-email">Email:</label><br>
+                    <input type="email" id="su-email" name="email" required><br>
+                    <label for="su-password">Password:</label><br>
+                    <input type="password" id="su-password" name="password" required><br>
+                    <label for="su-confirm">Confirm Password:</label><br>
+                    <input type="password" id="su-confirm" name="confirm_password" required><br>
+                    <button type="submit">Create Account</button><br>
+                </form>
+                <p>Already have an account? <a href="#" onclick="showForm('login')">Log In</a></p>
+            </div>
+        </section>
+    <script src="dynamic.js"></script>
+</body>
+</html>

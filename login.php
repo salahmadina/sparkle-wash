@@ -1,0 +1,18 @@
+<?php
+session_start();
+$conn = mysqli_connect("localhost", "root", "", "sparklewash");
+
+$email    = $_POST["email"];
+$password = $_POST["password"];
+
+$query  = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+$result = mysqli_query($conn, $query);
+
+if (mysqli_num_rows($result) > 0) {
+    $_SESSION["email"] = $email;
+    header("Location: index.html");
+    exit();
+} else {
+    echo "Invalid email or password";
+}
+?>
