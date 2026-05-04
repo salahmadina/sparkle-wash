@@ -34,6 +34,7 @@ mysqli_close($conn);
             <a href="mybooking.php">My Bookings</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+            <a href="profile.php">Profile</a>
         </div>
     </nav>
 
