@@ -1,56 +1,61 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    
+    
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-            <nav>
-        <div class="nav-left">
-            <a href="profile.html">Profile</a>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="brand" href="places.php">Car Wash Booking</a>
+        <div class="nav-links">
+            <a href="places.php">Places</a>
+            <a href="mybooking.php">My Bookings</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </div>
-        <div class="nav-brand">
-            SparkleWash
-        </div>
-        <ul class="nav-right">
-            <li><a href="places.php">Places</a></li>
-            <li><a href="booking.php">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
     </nav>
-        <div><h1>Contact Us</h1></div>
 
-        <div><p>We'd love to hear from you!</p></div>
-        <section>
-            <div>
-                <p>Email: <span> contact@sparklewash.com</span></p>
-            </div>
-            <div>
-                <p>Phone: <span>(020) 01000515540</span></p>
-            </div>
-            <div>
-                <p>Address: <span>123 Sparkle St, Clean City, CS 2026</span></p>
-            </div>
-            <div>
-                <p>Hours: <span>SUN-THU, 9AM-5PM</span></p>
-            </div>
-        </section>
+    <main class="page-shell">
+        <header class="page-header">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you!</p>
+        </header>
 
-        <section>
-            <div>
+        <div class="contact-layout">
+            <section class="contact-info">
+                <div class="info-item">
+                    <strong>Email</strong>
+                    <span>contact@sparklewash.com</span>
+                </div>
+                <div class="info-item">
+                    <strong>Phone</strong>
+                    <span>(020) 01000515540</span>
+                </div>
+                <div class="info-item">
+                    <strong>Address</strong>
+                    <span>123 Sparkle St, Clean City, CS 2026</span>
+                </div>
+                <div class="info-item">
+                    <strong>Hours</strong>
+                    <span>SUN-THU, 9AM–5PM</span>
+                </div>
+            </section>
+
+            <section class="contact-form-section">
                 <h2>Send Us a Message</h2>
-                <form action="contact.php" method="post">
-                    <label for="title">Title:</label><br>
-                    <input type="text" id="title" name="title" placeholder="Enter title"><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" placeholder="you@example.com "><br>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" placeholder="Enter your message here..."></textarea><br>
-                    <button type="submit">Send Message</button><br>
+                <form action="contact.php" method="post" class="contact-form">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter title">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message here..."></textarea>
+                    <button type="submit" class="confirm-button">Send Message</button>
                 </form>
-            </div>
-        
-    </body>
+            </section>
+        </div>
+    </main>
+</body>
 </html>

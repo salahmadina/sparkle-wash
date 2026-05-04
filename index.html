@@ -1,81 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+    <title>Sparkle Wash</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div><h1>Sparkle Wash</h1></div>
+    <div class="home-layout">
 
-        <div><h1>Your Car Deserves the Best Clean</h1></div>
-        <div><p>Book a car wash in seconds. Choose your service, pick a time, and we'll handle the rest.</p></div>
+        <!-- Left 70% -->
+        <div class="home-content">
+            <h1 class="home-brand">Sparkle Wash</h1>
+            <h2 class="home-headline">Your Car Deserves the Best Clean</h2>
+            <p class="home-about">SparkleWash is your online platform for booking a professional car wash across Cairo. We connect you with trusted, nearby wash stations so you can skip the queue, pick your service, and show up at exactly the right time. No waiting, no hassle — just a clean car.</p>
+            <p class="home-cta">Book a car wash in seconds. Choose your service, pick a time, and we'll handle the rest.</p>
 
-        <section>
-            <h2>Why Choose Sparkle Wash?</h2>
-            <div>
-                <div>
-                    <p>Easy Booking</p>
-                    <p>Book your car wash in seconds with our user-friendly website. Choose your service, pick a time, and we'll handle the rest.</p>
+            <section class="home-section">
+                <h3>Why Choose Sparkle Wash?</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <p class="feature-title">Easy Booking</p>
+                        <p>Choose your service, pick a date and time slot, confirm — done in under a minute.</p>
+                    </div>
+                    <div class="feature-card">
+                        <p class="feature-title">Trusted Stations</p>
+                        <p>Every station on our platform is reviewed and trusted to give your car the best care.</p>
+                    </div>
+                    <div class="feature-card">
+                        <p class="feature-title">Wide Coverage</p>
+                        <p>Stations across Nasr City, New Cairo, Maadi, and more — always one near you.</p>
+                    </div>
                 </div>
-                <div>
-                    <p>Trusted Wash Sations </p>
-                    <p>We have a network of trusted car wash stations that ensure your vehicle receives the best care.</p>
-                </div>
-                <div>
-                    <p>Big Scale</p>
-                    <p>We operate on a large scale, ensuring consistent quality and service availability across all our locations.</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <h2>Our Services</h2>
-            <div>
-                <div>
-                    <p>Basic Wash</p>
-                    <p>A quick and efficient wash to keep your car looking fresh.</p>
+            <section class="home-section">
+                <h3>Our Services</h3>
+                <div class="services-grid">
+                    <div class="service-card service-basic">
+                        <p class="service-title">Basic Wash</p>
+                        <p class="service-price">50 EGP</p>
+                        <p>Exterior wash, windows cleaned, tires rinsed, and full drying.</p>
+                    </div>
+                    <div class="service-card service-premium">
+                        <p class="service-title">Premium Wash</p>
+                        <p class="service-price">100 EGP</p>
+                        <p>Exterior wash, interior vacuum, dashboard polish, glass cleaning, and tire shine.</p>
+                    </div>
+                    <div class="service-card service-full">
+                        <p class="service-title">Full Service</p>
+                        <p class="service-price">150 EGP</p>
+                        <p>Exterior wash, interior clean, tire shine, glass cleaning, and dashboard polish.</p>
+                    </div>
                 </div>
-                <div>
-                    <p>Deluxe Wash</p>
-                    <p>A thorough cleaning that includes interior vacuuming and exterior waxing.</p>
-                </div>
-                <div>
-                    <p>Premium Wash</p>
-                    <p>The ultimate car care package with a deep clean, polish, and protective coating.</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section>
-            <div id="login-form">
+        <!-- Right 30% -->
+        <div class="auth-panel">
+            <div id="login-form" class="auth-form">
                 <h2>Log In</h2>
-                <form action = "login.php" method = "post">
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br>
-                    <label for="password">Password:</label><br>
-                    <input type="password" id="password" name="password" required><br>
-                    <button type="submit">Log In</button><br>
+                <form action="login.php" method="post">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit" class="confirm-button">Log In</button>
                 </form>
-                <p>Don't have an account? <a href="#" onclick="showForm('signup')">Sign Up</a></p>
+                <p>No account? <a href="#" onclick="showForm('signup')">Sign Up</a></p>
             </div>
 
-            <div id="signup-form" style="display:none">
+            <div id="signup-form" class="auth-form" style="display:none">
                 <h2>Create Account</h2>
-                <form action = "signup.php" method = "post" onsubmit="return validateForm()">
+                <form action="signup.php" method="post" onsubmit="return validateForm()">
                     <p id="msg"></p>
-                    <label for="su-name">Full Name:</label><br>
-                    <input type="text" id="su-name" name="name" required><br>
-                    <label for="su-email">Email:</label><br>
-                    <input type="email" id="su-email" name="email" required><br>
-                    <label for="su-password">Password:</label><br>
-                    <input type="password" id="su-password" name="password" required><br>
-                    <label for="su-confirm">Confirm Password:</label><br>
-                    <input type="password" id="su-confirm" name="confirm_password" required><br>
-                    <button type="submit">Create Account</button><br>
+                    <label for="su-name">Full Name</label>
+                    <input type="text" id="su-name" name="name" required>
+                    <label for="su-email">Email</label>
+                    <input type="email" id="su-email" name="email" required>
+                    <label for="su-password">Password</label>
+                    <input type="password" id="su-password" name="password" required>
+                    <label for="su-confirm">Confirm Password</label>
+                    <input type="password" id="su-confirm" name="confirm_password" required>
+                    <button type="submit" class="confirm-button">Create Account</button>
                 </form>
                 <p>Already have an account? <a href="#" onclick="showForm('login')">Log In</a></p>
             </div>
-        </section>
+        </div>
+
+    </div>
     <script src="dynamic.js"></script>
 </body>
 </html>
