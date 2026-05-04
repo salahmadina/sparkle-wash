@@ -36,6 +36,7 @@ mysqli_close($conn);
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
             <a href="profile.php">Profile</a>
+            <a href="logout.php">Log out</a>
         </div>
     </nav>
 
