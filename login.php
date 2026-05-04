@@ -13,6 +13,7 @@ if (mysqli_num_rows($result) > 0) {
     header("Location: contact.html");
     exit();
 } else {
-    echo "Invalid email or password";
-}
+echo "<div style='background:#ffdddd; color:#a94442; padding:10px; border-radius:5px; margin-top:10px;'>
+Invalid email or password (Back for login page again)
+</div>";}
 ?>

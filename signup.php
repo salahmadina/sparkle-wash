@@ -6,11 +6,12 @@ $name     = $_POST["name"];
 $email    = $_POST["email"];
 $password = $_POST["password"];
 
-=$check = mysqli_query($conn, "SELECT * FROM users WHERE email='$email'");
+$check = mysqli_query($conn, "SELECT * FROM users WHERE email='$email'");
 
 if (mysqli_num_rows($check) > 0) {
-    echo "Email already registered.";
-    exit();
+echo "<div style='color:white; background:red; padding:10px; border-radius:5px; width:fit-content;'>
+Email already registered. (Back for signup again)
+</div>"; exit();
 }
 
 $query = "INSERT INTO users (full_name, email, password) VALUES ('$name', '$email', '$password')";
